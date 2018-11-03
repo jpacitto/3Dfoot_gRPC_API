@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+service Dfootgeometry
+{
+	rpc ProcessImage (ProcessImageRequest) returns (ProcessImageResponse) {}
+}
+
+message ProcessImageRequest
+{
+	string uid = 1;
+	string identity = 2;
+	repeated bytes images = 3;
+}
+
+message ProcessImageResponse
+{
+	int32 response = 1;
+}
