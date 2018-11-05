@@ -1,3 +1,5 @@
+import six
+
 def ImageProcessor(uid, identity, images):
 	try:
 		print(uid)
